@@ -6,17 +6,27 @@ module.exports = {
       primary: ['Source Sans Pro', 'sans-serif'],
       title: ['Playfair Display', 'serif'],
     },
-    borderRadius: {
-      large: '130px',
-    },
-    extend: {
-      colors: {
-        'light-cream': '#FFF5E9',
-        'main-brown': '#201402',
-        'light-green': '#8ACFB2',
-        'rose-light': '#FFC0A7',
+    colors: {
+      cream: {
+        light: '#FFF5E9',
+      },
+      brown: {
+        default: '#201402',
+      },
+      green: {
+        light: '#8ACFB2',
+        dark: '#243F33',
+      },
+      rose: {
+        light: '#FFC0A7',
       },
     },
+    screens: {
+      sm: '576px',
+      md: '960px',
+      lg: '1300px',
+    },
+    extend: {},
   },
   plugins: [],
 };
