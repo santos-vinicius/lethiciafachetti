@@ -9,6 +9,7 @@ module.exports = {
     colors: {
       cream: {
         light: '#FFF5E9',
+        medium: '#F0CCA0',
       },
       brown: {
         default: '#201402',
@@ -22,7 +23,7 @@ module.exports = {
       },
     },
     screens: {
-      sm: '576px',
+      sm: '534px',
       md: '960px',
       lg: '1300px',
     },
