@@ -1,7 +1,12 @@
 import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 import styled from 'styled-components';
-import './Button.styled.css';
+
+const WaIcon = styled(FaWhatsapp)`
+  font-size: 35px;
+  font-weight: bold;
+  color: #201402;
+`;
 
 const StyledButton = styled.button`
   display: flex;
@@ -9,12 +14,12 @@ const StyledButton = styled.button`
   align-items: center;
   justify-content: center;
   gap: 10px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
-  margin: 1em;
   padding: 1rem;
   cursor: pointer;
   border: none;
+  color: #201402;
   border-radius: 10px;
   background: #FFF5E9;
   width: 300px;
@@ -22,12 +27,10 @@ const StyledButton = styled.button`
 
 function Button() {
   return (
-    <div>
-      <StyledButton>
-        <FaWhatsapp className="icon" />
-        Agende uma consulta
-      </StyledButton>
-    </div>
+    <StyledButton>
+      <WaIcon />
+      Agende uma consulta
+    </StyledButton>
   );
 }
 
