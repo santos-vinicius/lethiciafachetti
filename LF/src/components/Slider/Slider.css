@@ -1,0 +1,32 @@
+.swiper {
+  padding: 32px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #D57B7A;
+}
+
+.swiper-button-prev {
+  color: #FFC0A7;
+}
+
+
+/*
+@media screen and (min-width: 534px) {
+  .swiper-container {
+    width: 534px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .swiper-container {
+    width: 960px;
+  }
+}
+*/

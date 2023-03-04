@@ -1,0 +1,37 @@
+/* whyTheraphy cards styles */
+
+.cards-card {
+  background-color: #F0CCA0;
+  border-radius: 1rem;
+  padding: 0.25rem 1rem 1rem 1rem;
+  margin: 0 1rem 1rem 1rem;
+  min-width: 250px;
+  max-height: 330px;
+}
+
+.cards-card-autoconhecimento {
+  background-color: #F0CCA0;
+  border-radius: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 0 1rem 1rem 1rem;
+  min-width: 250px;
+  height: 235px;
+}
+
+.cards-title {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.cards-title-reduzido {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-top: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.cards-text {
+  text-align: justify;
+  font-size: 15px;
+}
