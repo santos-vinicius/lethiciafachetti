@@ -1,11 +1,12 @@
 import React from 'react';
+import './Cards.styled.css';
 
 function EscutaAjuda() {
   return (
-    <div>
-      <div>
-        <h3>Escuta e Ajuda</h3>
-        <p>
+    <div className="cards-card">
+      <div className="cards-content">
+        <h3 className="cards-title">Escuta e Ajuda</h3>
+        <p className="cards-text">
           Se precisar se olhar com cuidado e atenção para lidar com situações
           como ansiedade, depressão, hábitos prejudiciais, compulsões ou manias,
           medos ou fobias, dificuldades, traumas, estresse, dependência

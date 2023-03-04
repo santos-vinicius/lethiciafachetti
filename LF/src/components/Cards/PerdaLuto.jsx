@@ -1,11 +1,12 @@
 import React from 'react';
+import './Cards.styled.css';
 
 function PerdaLuto() {
   return (
-    <div>
-      <div>
-        <h3>Perdas e Luto</h3>
-        <p>
+    <div className="cards-card">
+      <div className="cards-content">
+        <h3 className="cards-title">Perdas e Luto</h3>
+        <p className="cards-text">
           Engana-se quem pensa que luto é apenas sobre perder uma alguém.
           Enfrentamos momentos de luto nos encerramentos de ciclo. Separações,
           perdas, fases de transições e mudanças podem nos levar a enfrentar

@@ -1,11 +1,12 @@
 import React from 'react';
+import './Cards.styled.css';
 
 function Relacionamentos() {
   return (
-    <div>
-      <div>
-        <h3>Relacionamentos</h3>
-        <p>
+    <div className="cards-card">
+      <div className="cards-content">
+        <h3 className="cards-title">Relacionamentos</h3>
+        <p className="cards-text">
           Se conhecendo, você aprende sobre seus limites e consegue se impor
           melhor nas suas relações, além de se cuidar com mais cuidado para não
           ultrapassar nenhum desses limites. Aprende a comunicar o que te

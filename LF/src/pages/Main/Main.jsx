@@ -1,6 +1,6 @@
 import React from 'react';
 import Imagem1 from '../../assets/images/01.jpeg';
-import Button from '../../components/Button/Button';
+import WhatsappButton from '../../components/WhatsappButton/WhatsappButton';
 import './Main.css';
 
 function Main() {
@@ -18,7 +18,7 @@ function Main() {
               relacionamentos.
             </p>
           </div>
-          <Button className="button" />
+          <WhatsappButton className="button" />
         </div>
         <img
           src={Imagem1}

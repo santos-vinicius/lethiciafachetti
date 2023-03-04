@@ -1,34 +1,75 @@
-import React from 'react';
-import Autoconhecimento from '../components/Cards/Autoconhecimento';
-import AutoestimaAutossabotagem from '../components/Cards/Autoestima';
-import EscutaAjuda from '../components/Cards/EscutaAjuda';
-import PerdaLuto from '../components/Cards/PerdaLuto';
-import Relacionamentos from '../components/Cards/Relacionamentos';
+import { React } from 'react';
+import styled from 'styled-components';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import {
+  Autoconhecimento,
+  Autoestima,
+  EscutaAjuda,
+  PerdaLuto,
+  // eslint-disable-next-line prettier/prettier
+  Relacionamentos
+} from '../components/Cards';
+import { Slide, Slider } from '../components/Slider';
+
+/*  ESTILIZAÇÃO  */
+const StyledTheraphy = styled.div`
+  background-color: #FFF5E9;
+  margin: 40px auto;
+
+  & h1{ 
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+`;
+/* FIM DA ESTILIZAÇÃO */
 
 function WhyTheraphy() {
+  const settings = {
+    spaceBetween: 5,
+    pagination: { clickable: true },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 5,
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+    },
+  };
+
   return (
-    <div>
+    <StyledTheraphy>
       <h1>Por que fazer terapia?</h1>
       <div>
-        <ul>
-          <li>
+        <Slider settings={settings}>
+          <Slide>
             <Autoconhecimento />
-          </li>
-          <li>
+          </Slide>
+          <Slide>
             <Relacionamentos />
-          </li>
-          <li>
-            <AutoestimaAutossabotagem />
-          </li>
-          <li>
+          </Slide>
+          <Slide>
+            <Autoestima />
+          </Slide>
+          <Slide>
             <EscutaAjuda />
-          </li>
-          <li>
+          </Slide>
+          <Slide>
             <PerdaLuto />
-          </li>
-        </ul>
+          </Slide>
+        </Slider>
       </div>
-    </div>
+    </StyledTheraphy>
   );
 }
 

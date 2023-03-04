@@ -9,8 +9,16 @@ const GlobalStyle = createGlobalStyle`
     background-color: #FFF5E9;
     font-family: Source Sans Pro, Playfair Display, sans-serif;
     color: #201402;
-
-}
+  }
+  
+  h1, h3 {
+    font-family: Playfair Display, serif;
+    font-weight: 800;
+  }
+  
+  li {
+    list-style: none;
+  }
 `;
 
 export default GlobalStyle;
