@@ -17,6 +17,18 @@
 }
 
 
+@media screen and (min-width: 530px) {
+  .swiper-container {
+    width: 530px;
+  }
+}
+
+@media screen and (min-width: 960) {
+  .swiper-container {
+    width: 960;
+  }
+}
+
 /*
 @media screen and (min-width: 534px) {
   .swiper-container {
