@@ -10,8 +10,9 @@ const StyledAbout = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px auto;
+  margin: 50px auto;
   padding: 40px;
+  max-height: fit-content;
   
   & img {
     height: 400px;
@@ -25,6 +26,7 @@ const StyledAbout = styled.div`
 
     & img {
       height: 300px;
+      margin-bottom: 20px;
       margin-right: 0;
     }
     
@@ -40,6 +42,7 @@ const StyledContent = styled.div`
   width: 100%;
   max-width: 571px;
   max-height: 374px;
+  margin-bottom: 34px;
 
   & h2 {
     text-align: center;
@@ -71,10 +74,6 @@ const StyledContent = styled.div`
 
 `;
 
-const WaButton = styled(WhatsappButton)`
-  margin-top: 34px;
-`;
-
 /* ----------- */
 
 function About() {
@@ -103,7 +102,7 @@ function About() {
             dependência emocional, relacionamento tóxico, entre outras.
           </p>
         </div>
-        <WaButton />
+        <WhatsappButton />
       </StyledContent>
     </StyledAbout>
   );
