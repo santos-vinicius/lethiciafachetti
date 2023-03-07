@@ -6,8 +6,8 @@ const StyledBenefits = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 20px auto;
-  padding: 40px;
+  margin: 0px 20px 20px 20px;
+  padding: 0 40px 40px 40px;
 
   & h2 {
     text-align: center;
@@ -36,7 +36,7 @@ const StyledCard = styled.div`
   justify-content: center;
   flex-direction: column;
   border-radius: 1rem;
-  padding: 1rem 1rem 3rem 1rem;
+  padding: 1rem 1rem 2rem 1rem;
   margin: 1rem 1rem 1rem 1rem;
   width: 300px;
   height: 200px;

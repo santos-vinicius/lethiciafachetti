@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import About from './pages/About/About';
 import Benefits from './pages/Benefits/Benefits';
 import Main from './pages/Main/Main';
+import Review from './pages/Reviews/Review';
 import WhyTheraphy from './pages/WhyTheraphy/WhyTheraphy';
 import GlobalStyle from './styles/globalStyles';
 
@@ -15,6 +16,7 @@ function App() {
       <WhyTheraphy />
       <About />
       <Benefits />
+      <Review />
     </>
   );
 }
