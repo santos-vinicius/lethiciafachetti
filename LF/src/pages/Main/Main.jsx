@@ -1,5 +1,5 @@
 import React from 'react';
-import Imagem1 from '../../assets/images/01.jpeg';
+import Imagem from '../../assets/images/01.jpeg';
 import WhatsappButton from '../../components/WhatsappButton/WhatsappButton';
 import './Main.css';
 
@@ -20,11 +20,7 @@ function Main() {
           </div>
           <WhatsappButton className="button" />
         </div>
-        <img
-          src={Imagem1}
-          alt="Psicóloga Lethícia Fachetti"
-          className="image"
-        />
+        <img src={Imagem} alt="Psicóloga Lethícia Fachetti" className="image" />
       </div>
     </div>
   );
