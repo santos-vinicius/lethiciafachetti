@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header/Header';
 import About from './pages/About/About';
 import Benefits from './pages/Benefits/Benefits';
+import Faq from './pages/Faq/Faq';
 import Main from './pages/Main/Main';
 import Review from './pages/Reviews/Review';
 import WhyTheraphy from './pages/WhyTheraphy/WhyTheraphy';
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Benefits />
       <Review />
+      <Faq />
     </>
   );
 }

@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
   body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     background-color: #FFF5E9;
     font-family: Source Sans Pro, Playfair Display, sans-serif;
     color: #201402;
@@ -15,6 +16,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: Playfair Display, serif;
     font-weight: 800;
   }
+
+  
   
   li {
     list-style: none;

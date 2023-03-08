@@ -1,0 +1,96 @@
+import React from 'react';
+import styled from 'styled-components';
+
+const StyledFaq = styled.div`
+  background-color: #FFF5E9;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px auto;
+
+  & h2 {
+    text-align: center;
+    font-family: Playfair Display, serif;
+    font-weight: 800;
+    margin-top: 0;
+  }
+
+  & div {
+    margin: 20px auto;
+    min-width: 500px;
+    max-width: 884px;
+    width: 90%;
+  }
+
+  & summary {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #8ACFB2;
+  }
+
+  & details > summary {list-style: none}
+  & summary::-webkit-details-marker {display: none; }
+  & details > summary::before {
+    content: "🟆";
+    color: #FFF5E9;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  & details {
+    margin-top: 0.5rem;
+  }
+
+  & details > p {
+    margin-top: 0.5rem;
+  }
+
+`;
+
+const source = [
+  {
+    summary: 'Como funciona o atendimento online?',
+    detail:
+      'A psicoterapia online tem a mesma eficácia da presencial. São consultas realizadas através de vídeo chamadas (Google Meet). Basta entrar em contato comigo pelo WhatsApp, tire suas dúvidas e agende o melhor horário. Faça o pagamento da sessão (cartão, transferência ou pix) e no horário combinado esteja em um lugar em que tenha privacidade e se sinta confortável para abordar qualquer assunto. Certifique-se de que está com um bom sinal de internet e aguarde o envio do link da chamada pelo WhatsApp. O psicólogo, assim como no atendimento presencial, mantem o sigilo sobre tudo o que é conversado com o paciente.',
+  },
+  {
+    summary: 'Posso remarcar ou desmarcar as sessões?',
+    detail:
+      'Se houver algum imprevisto que impossibilite o comparecimento na consulta, o paciente pode desmarcar desde que seja comunicado com 24 horas de antecedência. Para remarcar a consulta, depende da agenda e horários disponíveis.',
+  },
+  {
+    summary: 'Onde faço o agendamento das consultas?',
+    detail:
+      'Através do WhatsApp, onde já consigo tirar todas as suas dúvidas e entender um pouquinho de como poderei te ajudar.',
+  },
+  {
+    summary: 'Quanto tempo dura a consulta?',
+    detail:
+      'Os atendimentos são semanais ou quinzenais e a consulta tem duração de 50 minutos.',
+  },
+  {
+    summary: 'Atende a qual púbico?',
+    detail: 'Atendo adolescentes e adultos.',
+  },
+];
+
+function Faq() {
+  return (
+    <StyledFaq>
+      <h2>Perguntas Frequentes</h2>
+      <div>
+        {source.map((item) => (
+          <details>
+            <summary>{item.summary}</summary>
+            <p>{item.detail}</p>
+          </details>
+        ))}
+      </div>
+    </StyledFaq>
+  );
+}
+
+export default Faq;
