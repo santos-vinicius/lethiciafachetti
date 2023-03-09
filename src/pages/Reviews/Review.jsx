@@ -31,7 +31,7 @@ const SyledContainer = styled.div`
   grid-template-rows: 1fr 1fr;
   grid-gap: 20px;
 
-  @media (max-width: 530px) and (max-width: 940px) {
+  @media (max-width: 940px) {
     grid-template-columns: 1fr;
   }
 `;

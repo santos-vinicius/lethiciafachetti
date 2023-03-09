@@ -16,16 +16,29 @@ const StyledFaq = styled.div`
   }
 
   & div {
-    margin: 20px auto;
-    min-width: 400px;
+    margin: 10px auto;
+    min-width: 350px;
     max-width: 884px;
-    width: 50%;
+    width: 90%;
   }
 
-  @media (max-width: 530px) and (max-width: 960px) {
-   
-  }
+  @media (max-width: 960px) {
+    & div {
+      width: 70%;
+    }
 
+    & summary {
+      padding-left: 0rem;
+      font-size: 16px;
+    }
+
+    & details > summary::before {
+    content: '🌻';
+    color: #FFF5E9;
+    padding-right: 2px;
+    padding-left: 0.5rem;
+  }
+}
 
   & summary {
     cursor: pointer;

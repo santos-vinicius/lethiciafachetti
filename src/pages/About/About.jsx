@@ -21,7 +21,7 @@ const StyledAbout = styled.div`
     border-radius: 20px;
   }
   
-  @media (max-width: 530px) and (max-width: 960px) {
+  @media (max-width: 960px) {
     flex-direction: column;
 
     & img {
@@ -65,7 +65,7 @@ const StyledContent = styled.div`
     font-weight: 600;
   }
 
-  @media (max-width: 530px) and (max-width: 960px) {
+  @media (max-width: 960px) {
     & h2 {
       margin-top: 50px;
       margin-bottom: 0;

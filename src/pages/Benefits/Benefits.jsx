@@ -7,7 +7,7 @@ const StyledBenefits = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0px 20px 20px 20px;
-  padding: 0 40px 40px 40px;
+  padding: 0 40px 20px 40px;
 
   & h2 {
     text-align: center;
@@ -20,7 +20,8 @@ const StyledBenefits = styled.div`
     display: flex;
     justify-content: space-between;
   }
-  @media (max-width: 530px) and (max-width: 960px) {
+
+  @media (max-width: 960px) {
     & div {
       display: flex;
       flex-direction: column;
