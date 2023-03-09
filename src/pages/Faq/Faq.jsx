@@ -17,16 +17,22 @@ const StyledFaq = styled.div`
 
   & div {
     margin: 20px auto;
-    min-width: 500px;
+    min-width: 420px;
     max-width: 884px;
     width: 90%;
   }
+
+  @media (max-width: 530px) and (max-width: 960px) {
+   
+  }
+
 
   & summary {
     cursor: pointer;
     font-size: 20px;
     font-weight: 600;
     padding-top: 0.5rem;
+    padding-right: 0.5rem;
     padding-bottom: 0.5rem;
     background-color: #8ACFB2;
   }
@@ -34,10 +40,11 @@ const StyledFaq = styled.div`
   & details > summary {list-style: none}
   & summary::-webkit-details-marker {display: none; }
   & details > summary::before {
-    content: "🟆";
+    content: '🌻';
     color: #FFF5E9;
-    padding-right: 0.5rem;
+    padding-right: 0.2rem;
     padding-left: 0.5rem;
+    
   }
 
   & details {

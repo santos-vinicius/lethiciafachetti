@@ -36,7 +36,7 @@ const StyledFooter = styled.footer`
   }
 
   /* Small screen */
-  @media (min-width: 530px) and (max-width: 960px) {
+  @media (max-width: 530px) and (max-width: 960px) {
     & div {
       padding: 5px;
       gap: 2px;
