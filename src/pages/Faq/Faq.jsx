@@ -44,9 +44,7 @@ const StyledFaq = styled.div`
     cursor: pointer;
     font-size: 18px;
     font-weight: 600;
-    padding-top: 0.5rem;
-    padding-right: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem;
     background-color: #8ACFB2;
   }
 

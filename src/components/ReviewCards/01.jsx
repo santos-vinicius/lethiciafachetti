@@ -7,6 +7,7 @@ const Star = styled(FaStar)`
   font-size: 20px;
   font-weight: bold;
   color: #F58548;
+  margin-top: 1.5rem;
   margin-right: 0.2rem;
 `;
 
@@ -35,7 +36,7 @@ const StyledCard = styled.div`
 const Author = styled.div`
   background-color: #201402;
   border-radius: 50%;
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding: 6px 10px;
   align-items: flex-start;
   

@@ -6,6 +6,7 @@ const Star = styled(FaStar)`
   font-size: 20px;
   font-weight: bold;
   color: #F58548;
+  margin-top: 1.5rem;
   margin-right: 0.2rem;
 `;
 

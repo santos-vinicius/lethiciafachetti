@@ -41,14 +41,14 @@ const StyledContent = styled.div`
   height: 100%;
   width: 100%;
   max-width: 571px;
-  max-height: 374px;
+  max-height: 470px;
   margin-bottom: 34px;
 
   & h2 {
     text-align: center;
     font-family: Playfair Display, serif;
     font-weight: 800;
-    margin-top: 0;
+    margin-top: 10px;
   }
 
   & p {
