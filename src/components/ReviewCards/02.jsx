@@ -21,7 +21,7 @@ const StyledCard = styled.div`
     display: flex;
     align-items: center;
     margin-right: 9px;
-    margin-bottom: 2px;
+    margin-bottom: 0px;
   }
 
   & p {
@@ -34,6 +34,7 @@ const StyledCard = styled.div`
 const Author = styled.div`
   background-color: #201402;
   border-radius: 50%;
+  margin-top: 1rem;
   padding: 6px 12px;
   align-items: flex-start;
   

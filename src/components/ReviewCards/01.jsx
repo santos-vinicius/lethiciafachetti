@@ -35,6 +35,7 @@ const StyledCard = styled.div`
 const Author = styled.div`
   background-color: #201402;
   border-radius: 50%;
+  margin-top: 1rem;
   padding: 6px 10px;
   align-items: flex-start;
   
