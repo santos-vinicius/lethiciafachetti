@@ -17,9 +17,9 @@ const StyledFaq = styled.div`
 
   & div {
     margin: 20px auto;
-    min-width: 420px;
+    min-width: 400px;
     max-width: 884px;
-    width: 90%;
+    width: 50%;
   }
 
   @media (max-width: 530px) and (max-width: 960px) {
@@ -29,7 +29,7 @@ const StyledFaq = styled.div`
 
   & summary {
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     padding-top: 0.5rem;
     padding-right: 0.5rem;
@@ -53,7 +53,7 @@ const StyledFaq = styled.div`
   }
 
   & details > p {
-    margin-top: 0.5rem;
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 
 `;
