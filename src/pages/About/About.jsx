@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { el3, el4 } from '../../assets/graphics';
 import Imagem from '../../assets/images/02.jpg';
 import WhatsappButton from '../../components/WhatsappButton/WhatsappButton';
 
@@ -14,17 +15,46 @@ const StyledAbout = styled.div`
   padding: 40px;
   max-height: fit-content;
   
-  & img {
+  & .image {
     height: 400px;
     margin-right: 4rem;
     border: 4px solid #FFC0A7;
     border-radius: 20px;
   }
   
+  & .el3 {
+    position: absolute;
+    width: 185px;
+    height: 226px;
+    left: 1300px;
+    top: 1000px;
+  }
+
+  & .el4 {
+    position: absolute;
+    width: 486.37px;
+    height: 499.83px;
+    left: -135px;
+    top: 1250.64px;
+
+  }
+
   @media (max-width: 960px) {
     flex-direction: column;
+    
+    & .el3 {
+      height: 200px;
+      left: 350px;
+      top: 880px; 
+    }
 
-    & img {
+    & .el4 {
+      max-height: 300px;
+      left: -200px;
+      top: 1380px;
+    }
+
+    & .image {
       height: 300px;
       margin-bottom: 20px;
       margin-right: 0;
@@ -79,7 +109,8 @@ const StyledContent = styled.div`
 function About() {
   return (
     <StyledAbout>
-      <img src={Imagem} alt="Psicóloga Lethícia Fachetti" />
+      <img src={el3} alt="" className="el3" />
+      <img src={Imagem} alt="Psicóloga Lethícia Fachetti" className="image" />
       <StyledContent>
         <h2>Sobre mim</h2>
         <div>
@@ -104,6 +135,7 @@ function About() {
         </div>
         <WhatsappButton />
       </StyledContent>
+      <img src={el4} alt="" className="el4" />
     </StyledAbout>
   );
 }

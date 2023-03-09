@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import styled from 'styled-components';
+import { el7, el8 } from '../../assets/graphics';
 
 const StyledContact = styled.div`
   background-color: #FFF5E9;
@@ -8,6 +9,7 @@ const StyledContact = styled.div`
   justify-content: center;
   flex-direction: column;
   margin: 20px auto;
+  height: 300px;
   
   & h2 {
     text-align: center;
@@ -18,6 +20,34 @@ const StyledContact = styled.div`
 
   & div{
     margin: 25px auto;
+  }
+
+  & .el7 {
+    position: absolute;
+    width: 300px;
+    height: 380px;
+    left: -30px;
+    top: 3040px;
+  }
+
+  & .el8 {
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    left: 1200px;
+    top: 3090px;
+  }
+
+  @media (max-width: 960px) {
+    & .el7 {
+      height: 200px;
+      left: -90px;
+      top: 4100px;
+    }
+
+    & .el8 {
+      display: none;
+    }
   }
 `;
 
@@ -50,6 +80,7 @@ const StyledLink = styled.a`
 function Contact() {
   return (
     <StyledContact>
+      <img src={el7} alt="" className="el7" />
       <h2>Entre em contato</h2>
       <div>
         <StyledLink
@@ -69,6 +100,7 @@ function Contact() {
           <span>@psico.lethicia</span>
         </StyledLink>
       </div>
+      <img src={el8} alt="" className="el8" />
     </StyledContact>
   );
 }

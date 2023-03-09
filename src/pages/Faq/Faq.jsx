@@ -91,7 +91,7 @@ const source = [
       'Os atendimentos são semanais ou quinzenais e a consulta tem duração de 50 minutos.',
   },
   {
-    summary: 'Atende a qual púbico?',
+    summary: 'Atende a qual público?',
     detail: 'Atendo adolescentes e adultos.',
   },
 ];

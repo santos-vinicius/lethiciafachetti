@@ -1,4 +1,5 @@
 import React from 'react';
+import { el1, el2 } from '../../assets/graphics';
 import Imagem from '../../assets/images/01.jpeg';
 import WhatsappButton from '../../components/WhatsappButton/WhatsappButton';
 import './Main.css';
@@ -6,6 +7,7 @@ import './Main.css';
 function Main() {
   return (
     <div className="main">
+      <img src={el2} alt="/" className="el2" />
       <div className="container">
         <div className="content">
           <h1>Psicoterapia pela Psicanálise</h1>
@@ -22,6 +24,7 @@ function Main() {
         </div>
         <img src={Imagem} alt="Psicóloga Lethícia Fachetti" className="image" />
       </div>
+      <img src={el1} alt="/" className="el1" />
     </div>
   );
 }

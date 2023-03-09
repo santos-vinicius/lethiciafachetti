@@ -38,7 +38,24 @@
   margin-bottom: 20px;
   height: 400px;
   border-radius: 140px 140px 0px 0px;
-  border: 4px solid #FFC0A7;
+  border: 6px solid #FFC0A7;
+}
+
+.el1 {
+  position: absolute;
+  width: 546.53px;
+  height: 520px;
+  left: 1064px;
+  top: -50px;
+  z-index: 0;
+}
+
+.el2 {
+  position: absolute;
+  width: 500.61px;  
+  height: 500.93px;
+  left: -160px;
+  top: 260px;
 }
 
 /* Small screen */
@@ -46,8 +63,18 @@
 .main {
   height: 400px;
 }
+
 .image {
   display: none;
+}
+
+.el1 {
+  display: none;
+}
+
+.el2 {
+  height: 300px;
+  left: -220px;
 }
 
 .container {
@@ -61,7 +88,6 @@
   align-items: center;
   justify-content: center;
 }
-
 
 .content h1 {
   text-align: center;

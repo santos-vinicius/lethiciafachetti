@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { el5, el6 } from '../../assets/graphics';
 
 const StyledBenefits = styled.div`
   background-color: #FFF5E9;
@@ -21,11 +22,38 @@ const StyledBenefits = styled.div`
     justify-content: space-between;
   }
 
+  & .el5 {
+    position: absolute;
+    width: 517.62px;
+    height: 469.06px;
+    left: 1050px;
+    top: 1900px;
+  }
+
+  & .el6 {
+    position: absolute;
+    width: 372px;
+    height: 400px;
+    left: -100px;
+    top: 2500px;
+  }
+
   @media (max-width: 960px) {
     & div {
       display: flex;
       flex-direction: column;
     }
+
+    & .el5 {
+      height: 300px;
+      left: 180px;
+      top: 2180px; 
+      overflow-x: hidden;
+  }
+
+  & .el6 {
+    display: none;
+  }
   }
 
 `;
@@ -57,6 +85,7 @@ const StyledCard = styled.div`
 function Benefits() {
   return (
     <StyledBenefits>
+      <img src={el6} alt="" className="el6" />
       <h2>Principais Benefícios da Terapia</h2>
       <div className="benefits-content">
         <StyledCard>
@@ -78,6 +107,7 @@ function Benefits() {
           </p>
         </StyledCard>
       </div>
+      <img src={el5} alt="" className="el5" />
     </StyledBenefits>
   );
 }

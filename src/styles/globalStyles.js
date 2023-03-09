@@ -10,6 +10,8 @@ const GlobalStyle = createGlobalStyle`
     background-color: #FFF5E9;
     font-family: Source Sans Pro, Playfair Display, sans-serif;
     color: #201402;
+    overflow-x: hidden;
+    
   }
   
   h1, h3 {
