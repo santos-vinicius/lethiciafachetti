@@ -1,0 +1,76 @@
+import React from 'react';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import styled from 'styled-components';
+
+const StyledContact = styled.div`
+  background-color: #FFF5E9;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px auto;
+  
+  & h2 {
+    text-align: center;
+    font-family: Playfair Display, serif;
+    font-weight: 800;
+    margin-top: 0;
+  }
+
+  & div{
+    margin: 25px auto;
+  }
+`;
+
+const Instagram = styled(FaInstagram)`
+  font-size: 30px;
+  font-weight: bold;
+  color: #201402;
+  margin-right: 0.6rem;
+`;
+
+const Whatsapp = styled(FaWhatsapp)`
+  font-size: 30px;
+  font-weight: bold;
+  color: #201402;
+  margin-right: 0.5rem;
+`;
+
+const StyledLink = styled.a`
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 25px;
+  color: #201402;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+`;
+
+function Contact() {
+  return (
+    <StyledContact>
+      <h2>Entre em contato</h2>
+      <div>
+        <StyledLink
+          href="https://wa.me/+5511996698537"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Whatsapp />
+          <span>(11) 99669-8537</span>
+        </StyledLink>
+        <StyledLink
+          href="https://www.instagram.com/psico.lethicia/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Instagram />
+          <span>@psico.lethicia</span>
+        </StyledLink>
+      </div>
+    </StyledContact>
+  );
+}
+
+export default Contact;

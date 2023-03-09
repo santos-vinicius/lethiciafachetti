@@ -42,6 +42,7 @@ const StyledFaq = styled.div`
 
   & details {
     margin-top: 0.5rem;
+    text-align: justify;
   }
 
   & details > p {
