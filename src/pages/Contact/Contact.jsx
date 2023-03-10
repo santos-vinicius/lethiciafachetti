@@ -42,7 +42,7 @@ const StyledContact = styled.div`
     & .el7 {
       height: 180px;
       left: -110px;
-      top: 4480px;
+      top: 4478px;
     }
 
     & .el8 {
