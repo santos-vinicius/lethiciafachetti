@@ -45,10 +45,7 @@ const StyledBenefits = styled.div`
     }
 
     & .el5 {
-      height: 300px;
-      left: 180px;
-      top: 2180px; 
-      overflow-x: hidden;
+     display: none ;
   }
 
   & .el6 {

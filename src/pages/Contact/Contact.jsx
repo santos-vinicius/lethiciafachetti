@@ -40,9 +40,9 @@ const StyledContact = styled.div`
 
   @media (max-width: 960px) {
     & .el7 {
-      height: 200px;
-      left: -90px;
-      top: 4100px;
+      height: 180px;
+      left: -110px;
+      top: 4480px;
     }
 
     & .el8 {
