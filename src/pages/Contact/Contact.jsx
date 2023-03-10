@@ -26,8 +26,8 @@ const StyledContact = styled.div`
     position: absolute;
     width: 300px;
     height: 380px;
-    left: -30px;
-    top: 3040px;
+    left: -120px;
+    top: 3020px;
   }
 
   & .el8 {
@@ -35,15 +35,13 @@ const StyledContact = styled.div`
     width: 250px;
     height: 300px;
     left: 1200px;
-    top: 3090px;
+    top: 3070px;
   }
 
-  @media (max-width: 960px) {
+  @media (max-width: 950px) {
     & .el7 {
-      height: 180px;
-      left: -110px;
-      top: 4478px;
-    }
+      display: none;
+  }
 
     & .el8 {
       display: none;

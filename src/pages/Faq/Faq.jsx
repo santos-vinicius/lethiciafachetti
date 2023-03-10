@@ -73,7 +73,7 @@ const source = [
   {
     summary: 'Como funciona o atendimento online?',
     detail:
-      'A psicoterapia online tem a mesma eficácia da presencial. São consultas realizadas através de vídeo chamadas (Google Meet). Basta entrar em contato comigo pelo WhatsApp, tire suas dúvidas e agende o melhor horário. Faça o pagamento da sessão (cartão, transferência ou pix) e no horário combinado esteja em um lugar em que tenha privacidade e se sinta confortável para abordar qualquer assunto. Certifique-se de que está com um bom sinal de internet e aguarde o envio do link da chamada pelo WhatsApp. O psicólogo, assim como no atendimento presencial, mantem o sigilo sobre tudo o que é conversado com o paciente.',
+      'A psicoterapia online tem a mesma eficácia da presencial. São consultas realizadas através de vídeo chamadas (Google Meet). O psicólogo, assim como no atendimento presencial, mantem o sigilo sobre tudo o que é conversado com o paciente.',
   },
   {
     summary: 'Posso remarcar ou desmarcar as sessões?',
