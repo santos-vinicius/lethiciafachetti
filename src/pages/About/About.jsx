@@ -22,6 +22,12 @@ const StyledAbout = styled.div`
     border-radius: 20px;
   }
   
+  @media (min-width: 1500px) {
+    & .el3 {
+      display: none;
+    }
+  }
+
   & .el3 {
     position: absolute;
     width: 185px;
